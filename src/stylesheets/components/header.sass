@@ -1,0 +1,24 @@
+.header
+  position: relative
+  padding-top: 30px
+  z-index: 1
+  display: none
+  &-list
+    list-style: none
+    margin: 0
+    padding: 0
+    +flex(row, start, center)
+    li
+      margin-right: 2em
+      &:last-child
+        margin-right: 0
+      a
+        color: $gray
+        font-size: 25px
+        transition: 0.3s ease
+      &:hover .icon-twitter
+        color: $blue-twitter
+      &:hover .icon-facebook2
+        color: $blue-facebook
+      &:hover .icon-envelope
+        color: white
