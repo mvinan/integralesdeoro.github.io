@@ -14,13 +14,6 @@
       name="description"
       content="Productos a base de quinoa, soya y amaranto"
     />
-    <script>
-      const $ = (query) => query && document.querySelector(query);
-      const $yearEl = $("#currentYear");
-
-      const currentYear = new Date().getFullYear();
-      $yearEl.createTextNode(currentYear);
-    </script>
   </head>
   <body>
     <section class="comingSoon">
@@ -55,5 +48,13 @@
         </article>
       </footer>
     </section>
+
+    <script>
+      const $ = (query) => query && document.querySelector(query);
+      const $yearEl = $("#currentYear");
+      const currentYear = new Date().getFullYear();
+      const text = document.createTextNode(currentYear);
+      $yearEl.appendChild(text);
+    </script>
   </body>
 </html>
