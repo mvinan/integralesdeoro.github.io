@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Integrales de oro</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/icons.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <meta name="description" content="Productos a base de quinoa, soya y amaranto">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <meta
+      name="description"
+      content="Productos a base de quinoa, soya y amaranto"
+    />
+    <script>
+      const $ = (query) => query && document.querySelector(query);
+      const $yearEl = $("#currentYear");
+
+      const currentYear = new Date().getFullYear();
+      $yearEl.createTextNode(currentYear);
+    </script>
   </head>
   <body>
     <section class="comingSoon">
@@ -20,19 +33,27 @@
       </header>
       <section class="body">
         <figure class="body-logo">
-          <img src="assets/img/logo-negative.png" alt="">
+          <img src="assets/img/logo-negative.png" alt="" />
         </figure>
         <address class="body-contact">
-          <h6><a class="btn btn-default" href="mailto:contacto@integralesdeoro.com">contacto@integralesdeoro.com</a></h6>
+          <h6>
+            <a
+              class="btn btn-default"
+              href="mailto:contacto@integralesdeoro.com"
+              >contacto@integralesdeoro.com</a
+            >
+          </h6>
         </address>
       </section>
 
       <footer class="footer">
         <article class="container">
-          <small>Todos los derechos reservados, Integrales de oro © 2016</small>
+          <small
+            >Todos los derechos reservados, Integrales de oro © 2016 -
+            <span id="currentYear"></span
+          ></small>
         </article>
       </footer>
-
     </section>
   </body>
 </html>
