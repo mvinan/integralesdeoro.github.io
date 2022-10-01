@@ -50,11 +50,13 @@
     </section>
 
     <script>
-      const $ = (query) => query && document.querySelector(query);
-      const $yearEl = $("#currentYear");
-      const currentYear = new Date().getFullYear();
-      const text = document.createTextNode(currentYear);
-      $yearEl.appendChild(text);
+      (function () {
+        const $ = (query) => query && document.querySelector(query);
+        const $yearEl = $("#currentYear");
+        const currentYear = new Date().getFullYear();
+        const text = document.createTextNode(currentYear);
+        $yearEl.appendChild(text);
+      })();
     </script>
   </body>
 </html>
